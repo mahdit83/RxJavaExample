@@ -61,6 +61,7 @@ public class MainActivity extends AppCompatActivity {
 //                flatMapWithZipTest(10);
 
                 Intent i = new Intent(MainActivity.this,DissposableActivity.class);
+                i.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
                 startActivity(i);
 
             }
