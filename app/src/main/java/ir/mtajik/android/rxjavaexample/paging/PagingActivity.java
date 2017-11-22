@@ -24,12 +24,14 @@ import io.reactivex.disposables.Disposable;
 import io.reactivex.functions.Consumer;
 import io.reactivex.functions.Function;
 import io.reactivex.processors.PublishProcessor;
+import io.reactivex.subjects.PublishSubject;
 import ir.mtajik.android.rxjavaexample.R;
 
 public class PagingActivity extends AppCompatActivity {
 
 
     private CompositeDisposable compositeDisposable = new CompositeDisposable();
+//    private PublishSubject<Integer> integerPublishSubject = PublishSubject.create();
     private PublishProcessor<Integer> paginator = PublishProcessor.create();
     RecyclerView recyclerView;
     PagingAdapter pagingAdapter;
